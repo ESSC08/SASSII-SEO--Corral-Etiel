@@ -12,7 +12,7 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-bottom: 3em;
+    /*padding-bottom: 3em;
     position: relative;
     min-height: 100vh;
     font-family: 'Bebas Neue', cursive;
@@ -20,26 +20,22 @@ body {
     line-height: 2em;
     font-size: 1.2rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;*/
 }
 
 header {
     background-color: rgb(61, 16, 54);
     color: white;
     display: grid;
-    justify-content:center;
     padding: 15px;
-    border: 2px solid #2e0828;
     grid-area: header;
 }
 
 footer {
-    background:rgb(61, 16, 54);
-    border: 2px solid #2e0828;
     text-align:center;
     position: absolute;
-    bottom: 0 !important;
-    margin-bottom: 0rem !important;
+    /*bottom: 0;*/
+    margin-bottom: 0rem;
     width: 100%;
     grid-area: footer;
 }
@@ -47,12 +43,6 @@ footer {
 footer div img {
     display: inline-block;
     padding: 0.5em;
-}
-
-footer img{
-    width: 50px; height: 50px;
-    margin: 0px 10px;
-    border: none;
 }
 
 /*--------------------Estructura modificable "index.html" --------------------*/
@@ -73,8 +63,8 @@ nav ul li a:hover {
 }
 
 article {
-    justify-content: center;
-    padding: 3%;
+    padding: 30px;
+    margin: 20px;
     color: white;
     text-align: center;
 }
@@ -124,7 +114,7 @@ h3 {
 }
 
 /*--------------------Estructura contacto.html--------------------*/
-form {
+.form {
     width: 450px;
     margin: auto;
     border: 3px #2e0828 solid;
@@ -174,7 +164,7 @@ article {
     grid-area: article2;
 }
 
-/*-------------------------------------------------*/
+/*--------------------WEB---------------------*/
 
 /*-----------1024px------------*/
 @media (max-width: 1024px) {

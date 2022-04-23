@@ -5,6 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Mi proyecto web - Aplicando GRIDS</title>
+        <!--bootstrap-->
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+        <!--CSS propio-->
         <link rel="stylesheet" href="../style.css">
         <a href="link rel="preconnect href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,52 +15,68 @@
     </head>
 
 <body>
-    <div class="wrapper1">
-        <header class="main-head">
-            <h1>Casa de iluminacion LED ESCpectrum</h1>
-            <nav class="navigation">
-                <ul>
-                    <li> <a href="../index.html" class="list">Inicio</a></li>
-                    <li> <a href="contacto.html" class="list">Contacto</a></li>
-                    <li> <a href="" class="list">Locales</a></li>
-                    <li> <a href="preguntas--frecuentes.html" class="list">Preguntas Frecuentes</a></li>
-                    <li> <a href="productos.html" class="list">Productos</a></li>
-                </ul>
-            </nav>
-        </header>
-
+    <header class="p-3 bg-dark text-white">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+              <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+            </a>
+    
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="../index.html" class="nav-link px-2 text-secondary">Inicio</a></li>
+              <li><a href="contacto.html" class="nav-link px-2 text-white">Contacto</a></li>
+              <li><a href="" class="nav-link px-2 text-white">Locales</a></li>
+              <li><a href="preguntas--frecuentes.html" class="nav-link px-2 text-white">Preguntas Frecuentes</a></li>
+              <li><a href="productos.html" class="nav-link px-2 text-white">Productos</a></li>
+            </ul>
+    
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+              <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
+            </form>
+    
+            <div class="text-end">
+              <button type="button" class="btn btn-outline-light me-2">Login</button>
+              <button type="button" class="btn btn-warning">Sign-up</button>
+            </div>
+          </div>
+        </div>
+    </header>
+    
+    <div class="container-fluid">
         <article class="article1">
             <h2 class="titulo">Local:</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores dignissimos porro assumenda at quasi, explicabo dolorem odio libero. Doloribus fuga accusamus eius aut consectetur et obcaecati repellendus eaque debitis harum.
-        Soluta ratione magni excepturi beatae. Blanditiis soluta ratione, a, ducimus quidem officiis tenetur, ex esse omnis eos magni. Voluptates, ducimus blanditiis officia alias rem minus numquam quo fugiat accusamus perspiciatis?
-        Reprehenderit minima nisi mollitia. Odit totam velit illum unde. Nisi quod consequuntur voluptatum distinctio quisquam ipsum, doloribus obcaecati laudantium eius commodi saepe totam consequatur omnis error sint! Provident, dicta voluptate.
-        Quidem assumenda eaque ducimus corrupti, provident maxime rem? Aliquid iure error, quasi deleniti possimus numquam adipisci impedit? Ipsam, ab officiis! Quae vero officiis perferendis vitae explicabo blanditiis asperiores dolorum velit!
-        Molestiae placeat voluptas esse temporibus voluptatum similique dignissimos ullam quasi, quaerat debitis odit, tempora libero pariatur quos vero voluptates quam aut porro, maiores culpa sint consequatur eum! Provident, laborum hic.</p>
+            Soluta ratione magni excepturi beatae. Blanditiis soluta ratione, a, ducimus quidem officiis tenetur, ex esse omnis eos magni. Voluptates, ducimus blanditiis officia alias rem minus numquam quo fugiat accusamus perspiciatis?
+            Reprehenderit minima nisi mollitia. Odit totam velit illum unde. Nisi quod consequuntur voluptatum distinctio quisquam ipsum, doloribus obcaecati laudantium eius commodi saepe totam consequatur omnis error sint! Provident, dicta voluptate.
+            Quidem assumenda eaque ducimus corrupti, provident maxime rem? Aliquid iure error, quasi deleniti possimus numquam adipisci impedit? Ipsam, ab officiis! Quae vero officiis perferendis vitae explicabo blanditiis asperiores dolorum velit!
+            Molestiae placeat voluptas esse temporibus voluptatum similique dignissimos ullam quasi, quaerat debitis odit, tempora libero pariatur quos vero voluptates quam aut porro, maiores culpa sint consequatur eum! Provident, laborum hic.</p>
         </article>
-    
+        
         <article class="article2">
-            <img src="../assets/Local.jpg" alt="imagen local" width="440" class="img1">
-            <img src="../assets/Local2.jpg" alt="imagen local" width="440" class="img1">
+            <img src="../assets/Local.jpg" class="img-fluid img-thumbnail" alt="img local">
+            <!--<img src="../assets/Local2.jpg" class="img-fluid" alt="img local">-->
         </article>
+      </div>
+    
 
-    </div>
 
-<footer class="main-footer">
-    <div>
-    <a href="https://www.whatsapp.com/?lang=es" target="_blank">
-        <img src="../assets/whatsapp.png" class="foot" alt="" width="3%">
-    </a>
-    <a href="https://www.instagram.com/" target="_blank">
-        <img src="../assets/instagram.png" class="foot" alt="" width="3%">
-    </a>
-    <a href="https://www.facebook.com/" target="_blank">
-        <img src="../assets/facebook.png" class="foot" alt="" width="3%">
-    </a>
-    <a href="https://twitter.com/?lang=es" target="_blank">
-        <img src="../assets/twitter.png" class="foot" alt="" width="3%">
-    </a>
-    </div>
-</footer>
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center border-top bg-dark text-white">
+        <p class="col-md-4 mb-0 text-muted">&copy; ESCpectrum LED</p>
+    
+        <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+          <svg class="bi me-2" width="20" height="20"><use xlink:href="#bootstrap"/></svg>
+        </a>
+    
+        <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item"><a href="https://www.whatsapp.com/?lang=es" target="blank" class="nav-link px-2 text-muted"><img src="../assets/whatsapp.png" width="30px" alt="whatsapp"></a></li>
+          <li class="nav-item"><a href="https://www.instagram.com/" target="blank" class="nav-link px-2 text-muted"><img src="../assets/instagram.png" width="30px" alt="instagram"></a></li>
+          <li class="nav-item"><a href="https://www.facebook.com/" target="blank" class="nav-link px-2 text-muted"><img src="../assets/facebook.png" width="30px" alt="facebook"></a></li>
+          <li class="nav-item"><a href="https://twitter.com/?lang=es" target="blank" class="nav-link px-2 text-muted"><img src="../assets/twitter.png" width="30px" alt="twitter"></a></li>
+        </ul>
+    </footer>
+    
+    <script src="./bootstrap/js/bootstrap.js"></script>
 
 </body>
 </html>
