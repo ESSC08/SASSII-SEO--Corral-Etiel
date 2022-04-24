@@ -1,18 +1,17 @@
 /*Reset inicial HTML*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 /*---------------------Estructura general sin cambios body-footer-------------------*/
 body {
-    background-image: url(assets/Fondo3.jpg);
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /*padding-bottom: 3em;
+  background-image: url(assets/Fondo3.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*padding-bottom: 3em;
     position: relative;
     min-height: 100vh;
     font-family: 'Bebas Neue', cursive;
@@ -20,207 +19,142 @@ body {
     line-height: 2em;
     font-size: 1.2rem;
     display: flex;
-    flex-direction: column;*/
-}
+    flex-direction: column;*/ }
 
 header {
-    background-color: rgb(61, 16, 54);
-    color: white;
-    display: grid;
-    padding: 15px;
-    grid-area: header;
-}
+  background-color: #3d1036;
+  color: white;
+  display: grid;
+  padding: 15px;
+  grid-area: header; }
 
 footer {
-    position: absolute;
-    margin-bottom: 0rem;
-    width: 100%;
-    grid-area: footer;
-}
+  position: absolute;
+  margin-bottom: 0rem;
+  width: 100%;
+  grid-area: footer; }
 
 footer div img {
-    display: inline-block;
-    padding: 0.5em;
-}
+  display: inline-block;
+  padding: 0.5em; }
 
 /*--------------------Estructura modificable "index.html" --------------------*/
-
 nav ul li {
-    display: inline-block;
-    padding: 15px;
-}
+  display: inline-block;
+  padding: 15px; }
 
 nav ul li a {
-    text-decoration: none;
-    color: white;
-}
+  text-decoration: none;
+  color: white; }
 
 nav ul li a:hover {
-    transition-duration: 1.5s;
-    color: #15ff00;
-}
+  transition-duration: 1.5s;
+  color: #15ff00; }
 
 article {
-    padding: 55px 30px;
-    margin: 80px 30px;
-    color: white;
-    text-align: center;
-}
+  padding: 55px 30px;
+  margin: 80px 30px;
+  color: white;
+  text-align: center; }
 
 .img1 {
-    border: #15ff00 2px solid;
-    border-radius: 2%;
-}
+  border: #15ff00 2px solid;
+  border-radius: 2%; }
 
 .img1:hover {
-    transform:scale(1.1) translateZ(8px);
-    transition:all;
-    transition-duration: 1.5s;
-}
+  transform: scale(1.1) translateZ(8px);
+  transition: all;
+  transition-duration: 1.5s; }
 
 .video:hover {
-    transform:scale(1.9) translateY(26%);
-    transition: all;
-    transition-duration: 2s;
-}
+  transform: scale(1.9) translateY(26%);
+  transition: all;
+  transition-duration: 2s; }
 
 h2 {
-    padding: 1fr;
-    color: #15ff00;
-}
+  padding: 1fr;
+  color: #15ff00; }
 
 h3 {
-    padding: 1fr;
-    color: rgb(0, 0, 0);
-}
+  padding: 1fr;
+  color: black; }
 
 /*img {
     border: 2px #2e0828 solid;
     border-radius: 2%;
 }*/
-
-
 /*------------------Estructura grid index.html-------------------*/
 .wrapper {
-    grid-template-columns: 1fr;
-    display: grid;
-    gap: 20px;
-    grid-template-areas: 
-    "header"
-    "article"
-    "footer";
-}
+  grid-template-columns: 1fr;
+  display: grid;
+  gap: 20px;
+  grid-template-areas: "header" "article" "footer"; }
 
 /*--------------------Estructura contacto.html--------------------*/
 .form {
-    width: 450px;
-    margin: auto;
-    border: 3px #2e0828 solid;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 15px 10px;
-    border-radius: 7px;
-}
+  width: 450px;
+  margin: auto;
+  border: 3px #2e0828 solid;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 15px 10px;
+  border-radius: 7px; }
 
 input, textarea {
-    width: 90%;
-    border-radius: 3px;
-    border-color: #2e0828;
-    font-size: 15px;
-    padding: 7px;
-}
+  width: 90%;
+  border-radius: 3px;
+  border-color: #2e0828;
+  font-size: 15px;
+  padding: 7px; }
 
 /*------------------Estructura grid contacto.html-----------------*/
 .wrapper1 {
-    grid-template-columns: 1fr 1fr;
-    display: grid;
-    gap: 3em;
-    grid-template-areas: 
-    "header header"
-    "article1 article2"
-    "footer footer"
-}
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+  gap: 3em;
+  grid-template-areas: "header header" "article1 article2" "footer footer"; }
 
 /*--------------Interaccion con grid--------------*/
 .main-head {
-    grid-area: header;
-}
+  grid-area: header; }
 
 .main-footer {
-    bottom: 0;
-    grid-area: footer;
-}
+  bottom: 0;
+  grid-area: footer; }
 
 article {
-    grid-area: article;
-}
+  grid-area: article; }
 
 .article1 {
-    grid-area: article1;
-}
+  grid-area: article1; }
 
 .article2 {
-    grid-area: article2;
-}
+  grid-area: article2; }
 
 /*--------------------WEB---------------------*/
-
 /*-----------1024px------------*/
 @media (max-width: 1024px) {
-    .wrapper1 {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        display: grid;
-        gap: 3em;
-        grid-template-areas: 
-        "header header"
-        "article1 article2"
-        "footer footer"
-    }
-}
-
-
+  .wrapper1 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    display: grid;
+    gap: 3em;
+    grid-template-areas: "header header" "article1 article2" "footer footer"; } }
 
 /*------------Movil first-------------*/
 @media (max-width: 768px) {
-    .wrapper1 {
-        grid-template-columns: 1fr;
-        display: grid;
-        gap: 3em;
-        grid-template-areas: 
-        "header"
-        "article1"
-        "article2"
-        "footer"
-    }
-}
-
+  .wrapper1 {
+    grid-template-columns: 1fr;
+    display: grid;
+    gap: 3em;
+    grid-template-areas: "header" "article1" "article2" "footer"; } }
 
 /*--------------smart phone----------------*/
 @media (max-width: 480px) {
-    .wrapper1 {
-        grid-template-columns: 1fr;
-        display: grid;
-        gap: 3em;
-        grid-template-areas: 
-        "header"
-        "article1"
-        "article2"
-        "footer"
-    }
-    nav ul li {
-        display: inline-block;
-        padding: 5px;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
+  .wrapper1 {
+    grid-template-columns: 1fr;
+    display: grid;
+    gap: 3em;
+    grid-template-areas: "header" "article1" "article2" "footer"; }
+  nav ul li {
+    display: inline-block;
+    padding: 5px; } }
