@@ -64,7 +64,7 @@ nav ul li a:hover {
 
 article {
     padding: 30px;
-    margin: 20px;
+    margin: 80px 30px;
     color: white;
     text-align: center;
 }
@@ -129,7 +129,6 @@ input, textarea {
     border-color: #2e0828;
     font-size: 15px;
     padding: 7px;
-    margin-bottom: 7px;
 }
 
 /*------------------Estructura grid contacto.html-----------------*/
@@ -149,6 +148,7 @@ input, textarea {
 }
 
 .main-footer {
+    bottom: 0;
     grid-area: footer;
 }
 
