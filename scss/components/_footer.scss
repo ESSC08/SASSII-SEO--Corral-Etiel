@@ -1,0 +1,10 @@
+footer {
+    position: absolute;
+    margin-bottom: 0rem;
+    width: 100%;
+    grid-area: footer;
+    div img {
+        display: inline-block;
+        padding: 0.5em;
+    }
+}

@@ -6,22 +6,7 @@
 }
 
 /*---------------------Estructura general sin cambios body-footer-------------------*/
-body {
-    background-image: url(assets/Fondo3.jpg);
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /*padding-bottom: 3em;
-    position: relative;
-    min-height: 100vh;
-    font-family: 'Bebas Neue', cursive;
-    color: black;
-    line-height: 2em;
-    font-size: 1.2rem;
-    display: flex;
-    flex-direction: column;*/
-}
+@import "./components/body";
 
 header {
     background-color: rgb(61, 16, 54);
@@ -36,27 +21,13 @@ footer {
     margin-bottom: 0rem;
     width: 100%;
     grid-area: footer;
-}
-
-footer div img {
-    display: inline-block;
-    padding: 0.5em;
+    div img {
+        display: inline-block;
+        padding: 0.5em;
+    }
 }
 
 /*--------------------Estructura modificable "index.html" --------------------*/
-
-nav ul li {
-    display: inline-block;
-    padding: 15px;
-    a {
-        text-decoration: none;
-        color: white;
-        &:hover {
-            transition-duration: 1.5s;
-            color: #15ff00;
-        }
-    }
-}
 
 article {
     padding: 55px 30px;
@@ -68,12 +39,11 @@ article {
 .img1 {
     border: #15ff00 2px solid;
     border-radius: 2%;
-}
-
-.img1:hover {
-    transform:scale(1.1) translateZ(8px);
-    transition:all;
-    transition-duration: 1.5s;
+    &:hover {
+        transform:scale(1.1) translateZ(8px);
+        transition:all;
+        transition-duration: 1.5s;
+    }
 }
 
 .video:hover {
@@ -91,12 +61,6 @@ h3 {
     padding: 1fr;
     color: rgb(0, 0, 0);
 }
-
-/*img {
-    border: 2px #2e0828 solid;
-    border-radius: 2%;
-}*/
-
 
 /*------------------Estructura grid index.html-------------------*/
 .wrapper {
