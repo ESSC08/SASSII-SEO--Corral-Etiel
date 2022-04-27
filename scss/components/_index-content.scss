@@ -1,0 +1,30 @@
+article {
+    padding: 55px 30px;
+    margin: 80px 30px;
+    color: white;
+    text-align: center;
+}
+
+.img1 {
+    border: #15ff00 2px solid;
+    border-radius: 2%;
+    &:hover {
+        transform:scale(1.1) translateZ(8px);
+        transition:all;
+        transition-duration: 1.5s;
+    }
+}
+
+.video:hover {
+    transform:scale(1.9) translateY(26%);
+    transition: all;
+    transition-duration: 2s;
+}
+
+input, textarea {
+    width: 90%;
+    border-radius: 3px;
+    border-color: #2e0828;
+    font-size: 15px;
+    padding: 7px;
+}

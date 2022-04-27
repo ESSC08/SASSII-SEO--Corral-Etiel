@@ -1,10 +1,3 @@
-/*Reset inicial HTML*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-/*---------------------Estructura general sin cambios body-footer-------------------*/
 body {
   background-image: url(assets/Fondo3.jpg);
   background-position: center;
@@ -54,7 +47,61 @@ nav ul li {
       transition-duration: 1.5s;
       color: #15ff00; }
 
-/*--------------------Estructura modificable "index.html" --------------------*/
+@media (max-width: 1024px) {
+  .wrapper1 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    display: grid;
+    gap: 3em;
+    grid-template-areas: "header header" "article1 article2" "footer footer"; } }
+
+@media (max-width: 768px) {
+  .wrapper1 {
+    grid-template-columns: 1fr;
+    display: grid;
+    gap: 3em;
+    grid-template-areas: "header" "article1" "article2" "footer"; } }
+
+@media (max-width: 480px) {
+  .wrapper1 {
+    grid-template-columns: 1fr;
+    display: grid;
+    gap: 3em;
+    grid-template-areas: "header" "article1" "article2" "footer"; }
+  nav ul li {
+    display: inline-block;
+    padding: 5px; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+@media (max-width: 1024px) {
+  .wrapper1 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    display: grid;
+    gap: 3em;
+    grid-template-areas: "header header" "article1 article2" "footer footer"; } }
+
+@media (max-width: 768px) {
+  .wrapper1 {
+    grid-template-columns: 1fr;
+    display: grid;
+    gap: 3em;
+    grid-template-areas: "header" "article1" "article2" "footer"; } }
+
+@media (max-width: 480px) {
+  .wrapper1 {
+    grid-template-columns: 1fr;
+    display: grid;
+    gap: 3em;
+    grid-template-areas: "header" "article1" "article2" "footer"; }
+  nav ul li {
+    display: inline-block;
+    padding: 5px; } }
+
 article {
   padding: 55px 30px;
   margin: 80px 30px;
@@ -74,14 +121,6 @@ article {
   transition: all;
   transition-duration: 2s; }
 
-/*------------------Estructura grid index.html-------------------*/
-.wrapper {
-  grid-template-columns: 1fr;
-  display: grid;
-  gap: 20px;
-  grid-template-areas: "header" "article" "footer"; }
-
-/*--------------------Estructura contacto.html--------------------*/
 input, textarea {
   width: 90%;
   border-radius: 3px;
@@ -89,14 +128,18 @@ input, textarea {
   font-size: 15px;
   padding: 7px; }
 
-/*------------------Estructura grid contacto.html-----------------*/
+.wrapper {
+  grid-template-columns: 1fr;
+  display: grid;
+  gap: 20px;
+  grid-template-areas: "header" "article" "footer"; }
+
 .wrapper1 {
   grid-template-columns: 1fr 1fr;
   display: grid;
   gap: 3em;
   grid-template-areas: "header header" "article1 article2" "footer footer"; }
 
-/*--------------Interaccion con grid--------------*/
 .main-head {
   grid-area: header; }
 
@@ -112,32 +155,3 @@ article {
 
 .article2 {
   grid-area: article2; }
-
-/*--------------------WEB---------------------*/
-/*-----------1024px------------*/
-@media (max-width: 1024px) {
-  .wrapper1 {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    display: grid;
-    gap: 3em;
-    grid-template-areas: "header header" "article1 article2" "footer footer"; } }
-
-/*------------Movil first-------------*/
-@media (max-width: 768px) {
-  .wrapper1 {
-    grid-template-columns: 1fr;
-    display: grid;
-    gap: 3em;
-    grid-template-areas: "header" "article1" "article2" "footer"; } }
-
-/*--------------smart phone----------------*/
-@media (max-width: 480px) {
-  .wrapper1 {
-    grid-template-columns: 1fr;
-    display: grid;
-    gap: 3em;
-    grid-template-areas: "header" "article1" "article2" "footer"; }
-  nav ul li {
-    display: inline-block;
-    padding: 5px; } }

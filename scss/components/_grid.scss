@@ -1,0 +1,40 @@
+.wrapper {
+    grid-template-columns: 1fr;
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    "header"
+    "article"
+    "footer";
+}
+
+.wrapper1 {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    gap: 3em;
+    grid-template-areas: 
+    "header header"
+    "article1 article2"
+    "footer footer"
+}
+
+.main-head {
+    grid-area: header;
+}
+
+.main-footer {
+    bottom: 0;
+    grid-area: footer;
+}
+
+article {
+    grid-area: article;
+}
+
+.article1 {
+    grid-area: article1;
+}
+
+.article2 {
+    grid-area: article2;
+}
