@@ -7,25 +7,11 @@
 
 /*---------------------Estructura general sin cambios body-footer-------------------*/
 @import "./components/body";
-
-header {
-    background-color: rgb(61, 16, 54);
-    color: white;
-    display: grid;
-    padding: 15px;
-    grid-area: header;
-}
-
-footer {
-    position: absolute;
-    margin-bottom: 0rem;
-    width: 100%;
-    grid-area: footer;
-    div img {
-        display: inline-block;
-        padding: 0.5em;
-    }
-}
+@import "./components/header";
+@import "./components/footer";
+@import "./components/titulos";
+@import "./components/form";
+@import "./components/nav-style";
 
 /*--------------------Estructura modificable "index.html" --------------------*/
 
@@ -52,16 +38,6 @@ article {
     transition-duration: 2s;
 }
 
-h2 {
-    padding: 1fr;
-    color: #15ff00;
-}
-
-h3 {
-    padding: 1fr;
-    color: rgb(0, 0, 0);
-}
-
 /*------------------Estructura grid index.html-------------------*/
 .wrapper {
     grid-template-columns: 1fr;
@@ -74,14 +50,6 @@ h3 {
 }
 
 /*--------------------Estructura contacto.html--------------------*/
-.form {
-    width: 450px;
-    margin: auto;
-    border: 3px #2e0828 solid;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 15px 10px;
-    border-radius: 7px;
-}
 
 input, textarea {
     width: 90%;
