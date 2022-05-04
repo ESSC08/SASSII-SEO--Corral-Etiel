@@ -1,0 +1,7 @@
+@for $bucle from 1 through 6 {
+    h#{$bucle} {
+        font-size: 5rem / $bucle;
+        padding: 2fr;
+        color: $transicion;
+    }
+}

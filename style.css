@@ -21,21 +21,13 @@ footer {
     display: inline-block;
     padding: 0.5em; }
 
-h2 {
-  padding: 1fr;
-  color: #15ff00; }
-
-h3 {
-  padding: 1fr;
-  color: black; }
-
 .form {
   width: 450px;
   margin: auto;
-  border: 3px #2e0828 solid;
+  border: 2px #2e0828 solid;
   background: rgba(0, 0, 0, 0.5);
-  padding: 15px 10px;
-  border-radius: 7px; }
+  padding: 10px 10px;
+  border-radius: 6px; }
 
 li:hover {
   transition-duration: 1s;
@@ -129,6 +121,75 @@ article {
 .rounded, .rounded--nuevo {
   border: 2px black solid;
   background-color: white; }
+  .rounded:hover, .rounded--nuevo:hover {
+    transition-duration: 1s;
+    background-color: #15ff00; }
 
 .rounded--nuevo {
   border-radius: 1%; }
+
+.par-p1 {
+  color: #15ff00;
+  background-color: black;
+  border-radius: 5%;
+  border: 1px white solid; }
+
+.par-p2 {
+  color: #ff7300;
+  background-color: black;
+  border-radius: 5%;
+  border: 1px white solid; }
+
+.par-p3 {
+  color: #ff2323;
+  background-color: black;
+  border-radius: 5%;
+  border: 1px white solid; }
+
+.par-p4 {
+  color: #d9ff00;
+  background-color: black;
+  border-radius: 5%;
+  border: 1px white solid; }
+
+.par-p5 {
+  color: #00eeff;
+  background-color: black;
+  border-radius: 5%;
+  border: 1px white solid; }
+
+.par-p6 {
+  color: #ff00dd;
+  background-color: black;
+  border-radius: 5%;
+  border: 1px white solid; }
+
+h1 {
+  font-size: 5rem;
+  padding: 2fr;
+  color: #15ff00; }
+
+h2 {
+  font-size: 2.5rem;
+  padding: 2fr;
+  color: #15ff00; }
+
+h3 {
+  font-size: 1.66667rem;
+  padding: 2fr;
+  color: #15ff00; }
+
+h4 {
+  font-size: 1.25rem;
+  padding: 2fr;
+  color: #15ff00; }
+
+h5 {
+  font-size: 1rem;
+  padding: 2fr;
+  color: #15ff00; }
+
+h6 {
+  font-size: 0.83333rem;
+  padding: 2fr;
+  color: #15ff00; }
