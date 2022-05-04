@@ -1,0 +1,10 @@
+.rounded {
+    border: 2px rgb(0, 0, 0) solid;
+    background-color: white;
+}
+
+
+.rounded--nuevo {
+    @extend .rounded;
+    border-radius: 1%;
+}

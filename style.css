@@ -125,3 +125,10 @@ article {
 
 .article2 {
   grid-area: article2; }
+
+.rounded, .rounded--nuevo {
+  border: 2px black solid;
+  background-color: white; }
+
+.rounded--nuevo {
+  border-radius: 1%; }
