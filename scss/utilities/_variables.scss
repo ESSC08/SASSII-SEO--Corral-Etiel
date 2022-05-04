@@ -1,1 +1,16 @@
 $transicion: #15ff00;
+$estilos: (
+    image: url(assets/Fondo3.jpg),
+    position: center,
+    attachment: fixed,
+    repeat: no-repeat,
+    size: cover
+);
+
+body {
+    background-image: map-get($estilos, image);
+    background-position: map-get($estilos, position);
+    background-attachment: map-get($estilos, attachment);
+    background-repeat: map-get($estilos, repeat);
+    background-size: map-get($estilos, size);
+}

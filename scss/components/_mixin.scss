@@ -1,3 +1,14 @@
-@mixin name {
-    
+@mixin t-hover ($color) {
+    color: $color;
+    &:hover {transition-duration: 1s;
+    color: $transicion;
+    }
+}
+
+h1 {
+    @include t-hover (black);
+}
+
+h2 {
+    @include t-hover (black);
 }

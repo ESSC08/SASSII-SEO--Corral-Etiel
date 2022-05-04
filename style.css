@@ -5,6 +5,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover; }
 
+/*body {
+    background-image: url(assets/Fondo3.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}*/
 header {
   background-color: #3d1036;
   color: white;
@@ -165,31 +172,43 @@ article {
   border: 1px white solid; }
 
 h1 {
-  font-size: 5rem;
+  font-size: 3rem;
   padding: 2fr;
   color: #15ff00; }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   padding: 2fr;
   color: #15ff00; }
 
 h3 {
-  font-size: 1.66667rem;
-  padding: 2fr;
-  color: #15ff00; }
-
-h4 {
-  font-size: 1.25rem;
-  padding: 2fr;
-  color: #15ff00; }
-
-h5 {
   font-size: 1rem;
   padding: 2fr;
   color: #15ff00; }
 
-h6 {
-  font-size: 0.83333rem;
+h4 {
+  font-size: 0.75rem;
   padding: 2fr;
   color: #15ff00; }
+
+h5 {
+  font-size: 0.6rem;
+  padding: 2fr;
+  color: #15ff00; }
+
+h6 {
+  font-size: 0.5rem;
+  padding: 2fr;
+  color: #15ff00; }
+
+h1 {
+  color: black; }
+  h1:hover {
+    transition-duration: 1s;
+    color: #15ff00; }
+
+h2 {
+  color: black; }
+  h2:hover {
+    transition-duration: 1s;
+    color: #15ff00; }
